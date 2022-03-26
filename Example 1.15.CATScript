@@ -1,0 +1,20 @@
+'Name:Do Until
+'Version: 
+'Code:CATIA CATScript
+'Purpose: Do Until示例
+'Author:gaochaofeng  
+'Date:26.03.2022
+'Change:
+
+Sub CATmain()
+
+	Dim i ,Sum as Integer
+	Sum = 0
+	i = 0
+	Do
+		Sum = Sum + i
+		i = i + 1
+	Loop Until (Sum > 50) Or ( i > 10)
+	MsgBox (Sum)
+
+End sub

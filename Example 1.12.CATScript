@@ -1,0 +1,20 @@
+'Name:Select-Case-Else
+'Version: 
+'Code:CATIA CATScript
+'Purpose: Select-Case-Else示例
+'Author:gaochaofeng  
+'Date:26.03.2022
+'Change:
+
+Sub CATmain()
+	Sim Input
+	Input = InputBox ("Enter a number between 0 and 2:",0)
+	Select Case Input
+		Case "0"
+			MsgBox ("Number = 0")
+		Case "1","2"
+			MsgBox ("Number > 0")
+		Case Else
+			MsgBox ("Wrong Input")
+	End Select
+End Sub

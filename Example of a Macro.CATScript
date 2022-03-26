@@ -1,0 +1,11 @@
+'Name:Example of a Macro
+'Version: 
+'Code:CATIA CATVBA
+'Purpose: 宏示例
+'Author:gaochaofeng  
+'Date:26.03.2022
+'Change:
+
+Sub CATmain()
+	MsgBox("Hello World!")
+End Sub

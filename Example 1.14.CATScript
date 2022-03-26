@@ -1,0 +1,19 @@
+'Name:Do-While
+'Version: 
+'Code:CATIA CATScript
+'Purpose:Do-While示例 
+'Author:gaochaofeng  
+'Date:26.03.2022
+'Change:
+
+Sub CATmain()
+	Dim i ,Sum as integer
+	Sum = 0
+	i = 1
+	Do While Sum < 100
+		Sum = Sum + i
+		i = i + 1
+	Loop
+	MsgBox (Sum)
+
+End Sub

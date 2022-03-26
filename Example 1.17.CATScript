@@ -1,0 +1,16 @@
+'Name:Creating the Anchor Object of a CATIA Document
+'Version: 
+'Code:CATIA CATScript
+'Purpose: 创建CATIA Document对象
+'Author:gaochaofeng  
+'Date:26.03.2022
+'Change:
+
+Sub CATmain()
+	
+	Dim MyDocument as Document
+	Set MyDocument = CATIA.ActiveDocument
+	'如果没有打开的文档会报错！
+	MsgBox (MyDocument.Name)
+
+End Sub

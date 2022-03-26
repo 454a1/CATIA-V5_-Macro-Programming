@@ -1,0 +1,19 @@
+'Name:If-Then-Else
+'Version: 
+'Code:CATIA CATScript
+'Purpose: if-else语句示例
+'Author:gaochaofeng  
+'Date:26.03.2022
+'Change:
+
+Sub CATmain()
+	a=CInt(inputbox("Enter the value of a"))
+	b=CInt(inputbox("Enter the value of b"))
+
+	If (a>b) then
+		MsgBox a & " is greater"
+
+	Else 
+		MsgBox b & " is greater"
+	End If	
+End Sub

@@ -1,0 +1,15 @@
+'Name:Function
+'Version: 
+'Code:CATIA CATScript
+'Purpose: 函数示例
+'Author:gaochaofeng  
+'Date:26.03.2022
+'Change:
+
+Sub CATmain()
+	Dim Box
+	Box = MsgBox (MultiplicationOutput (1,3))
+End sub
+Function MultiplicationOutput (i,j as integer) as integer
+	 MultiplicationOutput = i*j
+End Function

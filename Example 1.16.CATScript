@@ -1,0 +1,14 @@
+'Name:Creating the Anchor Object CATIA V5
+'Version: 
+'Code:CATIA CATScript
+'Purpose: 连接CATIA对象
+'Author:gaochaofeng  
+'Date:26.03.2022
+'Change:
+
+Sub CATmain()
+	
+	Dim MyCatia as Application
+	Set MyCatia = CATIA
+	
+End Sub

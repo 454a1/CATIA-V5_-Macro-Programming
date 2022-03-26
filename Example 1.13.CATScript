@@ -1,0 +1,16 @@
+'Name:For-Next
+'Version: 
+'Code:CATIA CATScript
+'Purpose: For-Next示例
+'Author:gaochaofeng  
+'Date:26.03.2022
+'Change:
+
+Sub CATmain()
+	Dim i,Sum as integer
+	Sum = 0
+	For i = 1 to 10 Step 1
+		Sum = Sum + i
+	Next
+	Msgbox (Sum)
+End Sub
