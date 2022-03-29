@@ -1,0 +1,16 @@
+'Name:Output with Line Break
+'Version: 
+'Code:CATIA CATScript
+'Purpose: MsgBox 函数
+'Author:gaochaofeng  
+'Date:..2022
+'Change:
+
+Sub CATMain()
+	
+	Dim Box ,Length as long
+	Length = 75
+	Box = MsgBox ("The length is :" & Chr(13) & Chr(10) & Length _
+			&"mm", 64 ,"OutPut of Pipe Length")
+
+End Sub

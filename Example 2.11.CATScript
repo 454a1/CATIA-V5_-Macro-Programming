@@ -1,0 +1,19 @@
+'Name:Object Names of the Elements in a Selection
+'Version: 
+'Code:CATIA CATScript
+'Purpose: 显示所有选择项的名称
+'Author:gaochaofeng  
+'Date:26.03.2022
+'Change:
+
+Sub CATMain()
+
+	Dim Usel as Selection
+	set Usel = CATIA.ActiveDocument.Selection
+	If Usel.Count > 0 Then
+		For i =1 to Usel.Count
+			MsgBox (Usel.Item(i).Value.Name)
+		Next
+	End If
+	
+End Sub

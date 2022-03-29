@@ -1,0 +1,35 @@
+'Name:Selection at Run Time
+'Version: 
+'Code:CATIA CATScript
+'Purpose: 交互式选择，显示选择的对象名称
+'Author:gaochaofeng  
+'Date:26.03.2022
+'Change:
+
+Sub CATMain()
+	
+	'Set a Selection
+	'设置可以选择的类型
+	Dim What(2)
+	What(0) = "Pad"
+	What(1) = "Line"
+	What(2) = "Plane"
+	
+	'Define Selection and clear
+	Dim UserSel as Selection
+	set UserSel = CATIA.ActiveDocument.Selection
+	UserSel.Clear
+	
+	'Make a Selection
+	Dim E as string
+	E = UserSel.SelectElement2(What,"Select a Pad or Line or Plane",False)
+	If E = "Normal" Then
+		MsgBox(UserSel.Item(1).Value.Name)
+	Else
+		MsgBox("Selection Aborted")
+	End If
+
+	'Clear Selection
+	UserSel.Clear
+
+End Sub

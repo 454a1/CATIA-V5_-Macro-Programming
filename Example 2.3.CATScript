@@ -1,0 +1,16 @@
+'Name:Input Dialog Box
+'Version: 
+'Code:CATIA CATScript
+'Purpose: InputBox函数
+'Author:gaochaofeng  
+'Date:26.03.2022
+'Change:
+
+Sub CATMain()
+	
+	Dim Input as string
+	Input = "Smith"
+	Input = InputBox ("Please enter your last name.", _
+	"Enter Last Name",Input)
+
+End Sub

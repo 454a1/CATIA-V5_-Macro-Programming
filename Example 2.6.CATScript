@@ -1,0 +1,14 @@
+'Name:Opening Documents
+'Version: 
+'Code:CATIA CATScript
+'Purpose: 打开文档
+'Author:gaochaofeng  
+'Date:26.03.2022
+'Change:
+
+Sub CATMain()
+	
+	Dim ADoc as Document
+	Set ADoc = CATIA.Documents.Open("C:\Users\gaochaofeng\Desktop\121.CATPart")
+
+End Sub

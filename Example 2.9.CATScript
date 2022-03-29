@@ -1,0 +1,17 @@
+'Name:Saving in a Newly Created File
+'Version: 
+'Code:CATIA CATScript
+'Purpose: 保存到新地址
+'Author:gaochaofeng  
+'Date:26.03.2022
+'Change:
+
+Sub CATMain()
+	
+	Dim File as string
+	File = CATIA.FileSelectionBox ("File Save As","*CATPart",CATFileSelectionSave)
+	If File <> "" Then
+		CATIA.ActiveDocument.SaveAs File
+	End If
+
+End Sub

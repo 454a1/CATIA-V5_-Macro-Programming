@@ -1,0 +1,18 @@
+'Name:Opening Documents Using a Selection Window
+'Version: 
+'Code:CATIA CATScript
+'Purpose: 通过选择窗口打开文档
+'Author:gaochaofeng  
+'Date:26.03.2022
+'Change:
+
+Sub CATMain()
+	
+	Dim File as String
+	Dim ADoc as Document
+	File = CATIA.FileSelectionBox ("File oPen","*.CATPart", _
+					CATFileSelectionModeOpen)
+	If File <> "" Then
+		Set ADoc = CATIA.Dcuments.Open (File)
+	End If
+End Sub

@@ -1,0 +1,13 @@
+'Name:Output Window without Assignment
+'Version: 
+'Code:CATIA CATScript
+'Purpose: MsgBox函数
+'Author:gaochaofeng  
+'Date:26.03.2022
+'Change:
+
+Sub CATMain()
+	
+	MsgBox ("The length is :" & Chr(13) & Chr(10) & "75mm")
+
+End Sub

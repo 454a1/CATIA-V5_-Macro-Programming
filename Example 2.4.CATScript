@@ -1,0 +1,14 @@
+'Name:Create a New, Empty CATPart
+'Version: 
+'Code:CATIA CATScript
+'Purpose: 新建
+'Author:gaochaofeng  
+'Date:26.03.2022
+'Change:
+
+Sub CATMain()
+	
+	Dim ADoc as Document
+	Set SDoc = CATIA.Documents.Add ("Part")
+
+End Sub

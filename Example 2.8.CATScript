@@ -1,0 +1,18 @@
+'Name:Saving an Existing File
+'Version: 
+'Code:CATIA CATScript
+'Purpose: 保存现有文件
+'Author:gaochaofeng  
+'Date:..2022
+'Change:
+
+Sub CATMain()
+	
+	Dim DName as string
+	Dim Box 
+	DName = CATIA.ActiveDocument.FullName
+	Box = MsgBox ("I am saving the Document" & Chr(34) & DName & Chr(34) & _
+			".",64)
+	CATIA.ActiveDocument.Save
+
+End Sub

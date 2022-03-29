@@ -1,0 +1,14 @@
+'Name:Declaring an Object for User Selection
+'Version: 
+'Code:CATIA CATScript
+'Purpose: 为用户选择声明一个对象
+'Author:gaochaofeng  
+'Date:..2022
+'Change:
+
+Sub CATMain()
+	
+	Dim UserSelection as Selection
+	Set UserSelection = CATIA.ActiveDocument.Selection
+	MsgBox UserSelection.Name
+End Sub
