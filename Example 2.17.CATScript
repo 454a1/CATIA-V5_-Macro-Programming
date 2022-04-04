@@ -1,0 +1,14 @@
+'Name:Declare an Existing File
+'Version: 
+'Code:CATIA CATScript
+'Purpose: 声明一个存在文件
+'Author:gaochaofeng  
+'Date:..2022
+'Change:
+
+Sub CATMain()
+	
+	Dim File as File
+	Set File = CATIA.FileSystem.GetFile("C:\Users\gaochaofeng\Desktop\English.txt")
+
+End Sub

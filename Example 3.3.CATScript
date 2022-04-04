@@ -1,0 +1,16 @@
+'Name:Declaration of an Origin Plane
+'Version: 
+'Code:CATIA CATScript
+'Purpose: 介绍基准平面
+'Author:gaochaofeng  
+'Date:..2022
+'Change:
+
+Sub CATMain()
+	
+		Dim MyXYPlane As AnyObject
+    	Dim MyComponent As Part
+    	Set MyComponent = CATIA.ActiveDocument.Part
+    	Set MyXYPlane = MyComponent.OriginElements.PlaneXY
+
+End Sub

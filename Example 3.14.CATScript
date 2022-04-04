@@ -1,0 +1,33 @@
+'Name:Union Trim
+'Version: 
+'Code:CATIA CATScript
+'Purpose: 
+'Author:gaochaofeng  
+'Date:..2022
+'Change:
+
+Sub CATMain()
+	
+	Dim oPart As Part
+        Set oPart = CATIA.ActiveDocument.Part
+        Dim oSF As ShapeFactory
+        Set oSF = oPart.ShapeFactory
+        Dim oBody1, oBody2 As Body
+        Set oBody1 = oPart.Bodies.Item(1)
+        Set oBody2 = oPart.Bodies.Item(2)
+    
+        oPart.InWorkObject = oBody1
+        Dim Operation As Trim
+        Set Operation = oSF.AddNewTrim(oBody2)
+        Dim Volume2 As AnyObject
+        Set Volume2 = oBody2.Shapes.Item(1)
+        Dim E1, myFace, E3, RSur As String
+        E1 = "RSur"
+        E3 = "WithTemporary;WithoutBuildError;WithSelectingFeatureSupport"
+        myFace = "Face:(Brp:(Pad.2.2);None:())"
+        Dim Ref As Reference
+        Set Ref = oPart.CreateReferenceFromBRepName(RSur, Volume2)
+        Operation.AddFaceToKeep Ref
+        oPart.Update
+
+End Sub

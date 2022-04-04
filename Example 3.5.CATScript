@@ -1,0 +1,14 @@
+'Name:Declaring the PartBody
+'Version: 
+'Code:CATIA CATScript
+'Purpose: 获取零件几何体
+'Author:gaochaofeng  
+'Date:..2022
+'Change:
+
+Sub CATMain()
+	
+		Dim MyPartBody As Body
+    	Set MyPartBody = CATIA.ActiveDocument.Part.MainBody
+
+End Sub

@@ -1,0 +1,17 @@
+'Name:Coloring Geometrical Elements
+'Version: 
+'Code:CATIA CATScript
+'Purpose:添加颜色 
+'Author:gaochaofeng  
+'Date:31.3.2022
+'Change:
+
+Sub CATMain()
+	
+	Dim MyList as Selection
+	Set MyList = CATIA.ActiveDocument.Selection
+	MyList.Clear
+	MyList.Add CATIA.ActiveDocument.Part.MainBody
+	MyList.VisProperties.SetRealColor 0 , 255 , 0 ,1
+
+End Sub

@@ -1,0 +1,16 @@
+'Name:Declaring a Body by Name
+'Version: 
+'Code:CATIA CATScript
+'Purpose: 通过名称获取几何体
+'Author:gaochaofeng  
+'Date:..2022
+'Change:
+
+Sub CATMain()
+	
+		Dim Screw As Body
+    	Dim MyBodies As Bodies
+    	Set MyBodies = CATIA.ActiveDocument.Part.Bodies
+    	Set Screw = MyBodies.Item("Screw")
+
+End Sub

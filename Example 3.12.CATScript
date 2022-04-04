@@ -1,0 +1,18 @@
+'Name:Declaring Ordered Geometrical Sets by Index
+'Version: 
+'Code:CATIA CATScript
+'Purpose: 通过遍历获取当前的一个几何图形集
+'Author:gaochaofeng  
+'Date:..2022
+'Change:
+
+Sub CATMain()
+	
+		Dim OGSs As OrderedGeometricalSets
+    	Set OGSs = CATIA.ActiveDocument.Part.OrderedGeometricalSets
+    	Dim OGS As OrderedGeometricalSet
+    	Set OGS = OGSs.Item(2)
+    
+    	MsgBox (OGS.Name)
+
+End Sub

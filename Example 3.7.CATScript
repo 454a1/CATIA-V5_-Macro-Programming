@@ -1,0 +1,16 @@
+'Name:Declaring a Body by Index
+'Version: 
+'Code:CATIA CATScript
+'Purpose: 通过遍历获取几何体
+'Author:gaochaofeng  
+'Date:..2022
+'Change:
+
+Sub CATMain()
+	
+		Dim MyBody As Body
+    	Dim MyBodies As Bodies
+    	Set MyBodies = CATIA.ActiveDocument.Part.Bodies
+    	Set MyBody = MyBodies.Item(1)
+
+End Sub

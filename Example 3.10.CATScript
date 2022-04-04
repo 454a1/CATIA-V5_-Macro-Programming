@@ -1,0 +1,19 @@
+'Name:Declaring Geometrical Sets by Index
+'Version: 
+'Code:CATIA CATScript
+'Purpose: 通过遍历获取已存在的几何图形集
+'Author:gaochaofeng  
+'Date:..2022
+'Change:
+
+Sub CATMain()
+	
+		Dim Screw As HybridBodies
+    	Set Screw = CATIA.ActiveDocument.Part.HybridBodies.Item("Screw")
+    
+    	Dim OpenBody2 As HybridBody
+    	Set OpenBody2 = Screw.Item(2)
+    
+    	MsgBox (OpenBody2.Name & Screw.Item(1).Name)
+
+End Sub

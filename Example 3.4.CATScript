@@ -1,0 +1,17 @@
+'Name:Creating Bodies
+'Version: 
+'Code:CATIA CATScript
+'Purpose: 创建几何体
+'Author:gaochaofeng  
+'Date:..2022
+'Change:
+
+Sub CATMain()
+	
+		Dim MyBodies As Bodies
+    	Set MyBodies = CATIA.ActiveDocument.Part.Bodies
+    	Dim Screw As Body
+    	Set Screw = MyBodies.Add
+    	Screw.Name = "Screw"
+
+End Sub

@@ -1,0 +1,21 @@
+'Name:Standard Attributes of CATParts
+'Version: 
+'Code:CATIA CATScript
+'Purpose: 零件文件的一些标准属性
+'Author:gaochaofeng  
+'Date:1.4.2022
+'Change:
+
+Sub CATMain()
+	
+		Dim myProduct As Product
+    	Set myProduct = CATIA.ActiveDocument.Product
+    
+    	myProduct.PartNumber = "4911"
+    	myProduct.Revision = "A"
+    	myProduct.Definition = "螺钉"
+    	myProduct.Nomenclature = "Screw M10"
+    	myProduct.Source = 2
+    	myProduct.DescriptionRef = "Supplier Smith"
+
+End Sub

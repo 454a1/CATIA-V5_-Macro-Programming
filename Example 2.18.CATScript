@@ -1,0 +1,18 @@
+'Name:Create New File
+'Version: 
+'Code:CATIA CATScript
+'Purpose: 新建一个文件夹
+'Author:gaochaofeng  
+'Date:..2022
+'Change:
+
+Sub CATMain()
+	
+	Dim File as String
+	File = CATIA.FileSelectionBox ("Select File","*.CATPart",CATFileSelectionModeSave)
+	If File <> "" Then
+		Dim iFile as File
+		iFile = CATIA.FileSystem.CreatFile (File,False)
+	End If
+
+End Sub

@@ -1,0 +1,19 @@
+'Name:Creating Parameters
+'Version: 
+'Code:CATIA CATScript
+'Purpose: 创建参数
+'Author:gaochaofeng  
+'Date:..2022
+'Change:
+
+Sub CATMain()
+	
+    Dim Params As Parameters
+    Set Params = CATIA.ActiveDocument.part.Parameters
+    Dim myReal As RealParam
+    Set myReal = Params.CreateReal("Pi", 3.14159)
+    Dim myLength, myAngle As Dimension
+    Set myLength = Params.CreateDimension("Height", "Length", 200)
+    Set myAngle = Params.CreateDimension("Connection", "Angle", 100)
+
+End Sub

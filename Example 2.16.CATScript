@@ -1,0 +1,17 @@
+'Name:Hiding Geometrical Elements
+'Version: 
+'Code:CATIA CATScript
+'Purpose:隐藏元素 
+'Author:gaochaofeng  
+'Date:31.3.2022
+'Change:
+
+Sub CATMain()
+	
+	Dim MyList as Selection
+	Set MyList = CATIA.ActiveDocument.Selection
+	MyList.Clear
+	MyList.Add CATIA.ActiveDocument.Part.MainBody
+	MyList.VisProperties.SetShow catVisPropertyNoShowAttr
+
+End Sub

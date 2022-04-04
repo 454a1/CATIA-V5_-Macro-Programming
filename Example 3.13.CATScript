@@ -1,0 +1,24 @@
+'Name:Addition of Two Bodies
+'Version: 
+'Code:CATIA CATScript
+'Purpose: 布尔操作-添加
+'Author:gaochaofeng  
+'Date:..2022
+'Change:
+
+Sub CATMain()
+	
+	 	Dim oPart As Part
+    	Set oPart = CATIA.ActiveDocument.Part
+    	Dim oSF As ShapeFactory
+    	Set oSF = oPart.ShapeFactory
+    	Dim oBody1, oBody2 As Body
+    	Set oBody1 = oPart.Bodies.Item(1)
+    	Set oBody2 = oPart.Bodies.Item(2)
+    
+    	oPart.InWorkObject = oBody1
+    	Dim Operation As Add
+    	Set Operation = oSF.AddNewAdd(oBody2)
+    	oPart.Update
+
+End Sub

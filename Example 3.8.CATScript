@@ -1,0 +1,19 @@
+'Name:Creating a Geometrical Set
+'Version: 
+'Code:CATIA CATScript
+'Purpose: 创建几何图形集
+'Author:gaochaofeng  
+'Date:..2022
+'Change:
+
+Sub CATMain()
+	
+	 	Dim HB1 As HybridBodies
+    	Set HB1 = CATIA.ActiveDocument.Part.HybridBodies
+    
+    	Dim Hierarchy1 As HybridBody
+    	Set Hierarchy1 = HB1.Add
+    
+    	Hierarchy1.Name = "Hierarchy1"
+
+End Sub

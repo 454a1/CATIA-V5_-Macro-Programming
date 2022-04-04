@@ -1,0 +1,16 @@
+'Name:Declaring Geometrical Sets by Name
+'Version: 
+'Code:CATIA CATScript
+'Purpose: 声明一个已存在的几何图形集
+'Author:gaochaofeng  
+'Date:..2022
+'Change:
+
+Sub CATMain()
+	
+		Dim HBodies As HybridBodies
+    	Set HBodies = CATIA.ActiveDocument.Part.HybirdBodies
+    	Dim mysurfaces As HybridBody
+    	Set mysurfaces = HBodies.Item("Surfaces")
+    
+End Sub

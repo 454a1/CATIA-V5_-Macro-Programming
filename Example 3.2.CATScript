@@ -1,0 +1,20 @@
+'Name:Custom Attributes of a CATPart
+'Version: 
+'Code:CATIA CATScript
+'Purpose: CATPart文档的自定义属性
+'Author:gaochaofeng  
+'Date:..2022
+'Change:
+
+Sub CATMain()
+	
+		Dim myProduct As Product
+    	Set myProduct = CATIA.ActiveDocument.Product
+    
+    	Dim BAttrib As Parameters
+    	Set BAttrib = myProduct.UserRefProperties
+    
+    	Dim B As BoolParam
+    	Set B = BAttrib.CreateBoolean("Standsrd Part", True)
+	
+End Sub

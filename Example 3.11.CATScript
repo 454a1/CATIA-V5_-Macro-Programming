@@ -1,0 +1,22 @@
+'Name:Creating Ordered Geometrical Sets
+'Version: 
+'Code:CATIA CATScript
+'Purpose: 创建几何图形集
+'Author:gaochaofeng  
+'Date:..2022
+'Change:
+
+Sub CATMain()
+	
+		Dim MyPartBody As Body
+    	Set MyPartBody = CATIA.ActiveDocument.Part.MainBody
+    	Dim OGS1, OGS2 As OrderedGeometricalSets
+    	Set OGS1 = CATIA.ActiveDocument.Part.OrderedGeometricalSets
+    	Set OGS2 = MyPartBody.OrderedGeometricalSets
+    	Dim Hierarchy1, InBody As OrderedGeometricalSet
+    	Set Hierarchy1 = OGS1.Add
+    	Set InBody = OGS2.Add
+    	Hierarchy1.Name = "Hierarchy1"
+    	InBody.Name = "InBody"
+
+End Sub
